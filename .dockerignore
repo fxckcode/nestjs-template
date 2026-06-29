@@ -1,16 +1,8 @@
-node_modules
-dist
-.git
+# Agent configuration directories (local only)
 .agents
 .claude
+.opencode
 .commandcode
-.hermes
 .pi
-.env
-pnpm-debug.log
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-Dockerfile
-docker-compose.yml
-README.md
+.hermes
+skills-lock.json

@@ -1,10 +1,29 @@
-# Prisma generated
-/src/generated/prisma
+node_modules
+dist
+coverage
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+*.tsbuildinfo
+src/generated
 
-# Compiled output
-/dist
-/node_modules
-/build
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*.launch
+.settings/
 
 # Logs
 logs
@@ -13,72 +32,29 @@ npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-
-# OS
-.DS_Store
-Thumbs.db
 
 # Tests
 /coverage
 /.nyc_output
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-
-# temp directory
-.temp
-.tmp
-
-# Runtime data
+# Runtime
 pids
 *.pid
 *.seed
 *.pid.lock
-
-# Diagnostic reports
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-# Prisma generated
-/generated/prisma
-
-# Typescript
-*.tsbuildinfo
+report.[0-9]*.[0-9]*.[0-9]*.json
 
 # Misc
-.next/
+.temp
+.tmp
 *.pem
+.next/
 
-# Guardian
-.guardianignore
-
-# CLI tool configs
+# Agent artifacts
 .agents
-.atl
+.claude
 .opencode
 .commandcode
 .pi
 .hermes
-
-# Prisma
-!/prisma/seed.ts
+skills-lock.json

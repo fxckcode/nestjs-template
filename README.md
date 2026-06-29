@@ -1,5 +1,15 @@
 # NestJS Template
 
+[![CI](https://github.com/fxckcode/nestjs-template/actions/workflows/ci.yml/badge.svg)](https://github.com/fxckcode/nestjs-template/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/fxckcode/nestjs-template)](LICENSE)
+[![NestJS](https://img.shields.io/badge/NestJS-11-red?logo=nestjs)](https://nestjs.com)
+[![Prisma](https://img.shields.io/badge/Prisma-7-blue?logo=prisma)](https://prisma.io)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript)](https://www.typescriptlang.org)
+[![Node](https://img.shields.io/badge/Node-22-339933?logo=nodedotjs)](https://nodejs.org)
+[![pnpm](https://img.shields.io/badge/pnpm-10-F69220?logo=pnpm)](https://pnpm.io)
+
+[![Use this template](https://img.shields.io/badge/Use%20this%20template-2ea44f?logo=github)](https://github.com/new?template_name=nestjs-template&template_owner=fxckcode)
+
 Base template for **NestJS 11** backend applications with **Prisma ORM**, **PostgreSQL**, **Redis**, and **Docker** setup.
 
 ## Stack

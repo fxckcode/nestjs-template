@@ -1,6 +1,5 @@
-import { PrismaClient } from '../src/generated/prisma/client';
+import { PrismaClient } from '../src/generated/prisma/client.js';
 
-// @ts-expect-error - Prisma 7 generated client expects adapter in constructor
 const prisma = new PrismaClient();
 
 async function main() {

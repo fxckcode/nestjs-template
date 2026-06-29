@@ -12,7 +12,7 @@ jobs:
   release:
     name: Create Release
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'JoseCortezz25'
+    if: github.repository_owner == 'fxckcode'
 
     steps:
       - name: Checkout
