@@ -8,7 +8,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build",
+    "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -104,6 +104,10 @@
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!\\.pnpm)(?!(@nestjs)/)",
+      "/node_modules/\\.pnpm/(?!(@nestjs@|@nestjs\\+)[^/]+/node_modules/@nestjs)"
+    ],
     "collectCoverageFrom": [
       "**/*.(t|j)s"
     ],

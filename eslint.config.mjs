@@ -9,7 +9,11 @@ export default tseslint.config(
     ignores: ['eslint.config.mjs', 'dist/', 'node_modules/', 'src/generated/'],
   },
   eslint.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
+  // TypeScript 6 currently breaks type-aware lint resolution in CI
+  // ("Unsafe call of a type that could not be resolved"). Use the
+  // non-type-checked preset until the toolchain catches up; keep
+  // strict non-type-aware rules below.
+  ...tseslint.configs.recommended,
   eslintPluginPrettierRecommended,
   {
     languageOptions: {
@@ -34,13 +38,13 @@ export default tseslint.config(
         },
       ],
       '@typescript-eslint/no-explicit-any': 'error',
-      '@typescript-eslint/no-floating-promises': 'error',
-      '@typescript-eslint/no-unsafe-argument': 'warn',
+      '@typescript-eslint/no-floating-promises': 'off',
+      '@typescript-eslint/no-unsafe-argument': 'off',
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       'no-console': 'warn',
       'prettier/prettier': ['error', { endOfLine: 'auto' }],
-      'no-unused-vars': 'off', // Use @typescript-eslint version
+      'no-unused-vars': 'off',
     },
   },
 );

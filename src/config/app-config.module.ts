@@ -14,7 +14,7 @@ import { validationSchema } from './config.validation';
       validationOptions: {
         abortEarly: true,
         allowUnknown: true,
-      },
+      } as Record<string, unknown>,
     }),
   ],
 })
