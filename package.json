@@ -104,6 +104,10 @@
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!\\.pnpm)(?!(@nestjs)/)",
+      "/node_modules/\\.pnpm/(?!(@nestjs@|@nestjs\\+)[^/]+/node_modules/@nestjs)"
+    ],
     "collectCoverageFrom": [
       "**/*.(t|j)s"
     ],
