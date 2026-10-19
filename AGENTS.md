@@ -4,9 +4,9 @@ This file provides guidance to AI agents when working with code in this reposito
 
 ## Project Overview
 
-This is a **NestJS 11** backend application using **TypeScript**, **Prisma ORM** (PostgreSQL), **Redis**, and **Swagger**. It follows a **Screaming Architecture** approach with domain-driven organization, where each business domain is encapsulated in its own NestJS module.
+This is a **NestJS 12** backend application using **TypeScript**, **Prisma ORM** (PostgreSQL), **Redis**, and **Swagger**. It follows a **Screaming Architecture** approach with domain-driven organization, where each business domain is encapsulated in its own NestJS module.
 
-**Tech Stack**: NestJS 11, TypeScript, Prisma ORM, PostgreSQL, Redis (ioredis), Joi/Zod validation, Swagger/OpenAPI, Jest
+**Tech Stack**: NestJS 12, TypeScript, Prisma ORM, PostgreSQL, Redis (ioredis), Joi/Zod validation, Swagger/OpenAPI, Vitest
 
 ## General Rules
 
@@ -70,7 +70,7 @@ Canonical source: `.agents/`. Skills reference in `.claude/skills/` and `.openco
 
 | Skill | Description |
 |-------|-------------|
-| `nestjs-best-practices` | NestJS 11 patterns, modules, DI |
+| `nestjs-best-practices` | NestJS 12 patterns, modules, DI |
 | `nodejs-best-practices` | Node.js backend conventions |
 | `prisma-client-api` | Prisma ORM queries, relations, transactions |
 | `prisma-database-setup` | Prisma schema, migrations, seeding |

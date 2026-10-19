@@ -6,3 +6,16 @@
 .pi
 .hermes
 skills-lock.json
+
+# Dependencies and build output are recreated inside the image.
+node_modules
+dist
+coverage
+*.tsbuildinfo
+src/generated/prisma
+
+# Never send local credentials or git history to the build context.
+.git
+.env
+.env.*
+!.env.example

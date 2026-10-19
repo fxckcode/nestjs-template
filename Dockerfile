@@ -1,4 +1,4 @@
-FROM node:26-alpine AS base
+FROM node:22-alpine AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
@@ -17,10 +17,10 @@ RUN pnpm build
 FROM base AS deploy
 ENV NODE_ENV=production
 COPY package.json pnpm-lock.yaml ./
-RUN pnpm install --prod --frozen-lockfile
+# Skip lifecycle scripts because production dependencies omit development tools such as Husky.
+RUN pnpm install --prod --frozen-lockfile --ignore-scripts
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/prisma ./prisma
-RUN pnpm prisma generate
 
 EXPOSE 3000
 CMD ["node", "dist/main"]

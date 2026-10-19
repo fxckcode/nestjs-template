@@ -1,4 +1,4 @@
-// Mock for Prisma 7 generated client (avoids ESM import.meta.url issue in Jest)
+// Mock for Prisma 7 generated client in tests.
 export class PrismaClient {
   $connect(): Promise<void> { return Promise.resolve(); }
   $disconnect(): Promise<void> { return Promise.resolve(); }
